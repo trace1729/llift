@@ -19,8 +19,8 @@ _special_cases = json.load(
 
 
 def read_function_definition(file_path: str, line_number, linux_path=LINUX_PATH):
-    if file_path.startswith("source/"):
-        file_path = file_path[7:]
+    if file_path.startswith("/v4.14/source/"):
+        file_path = file_path[14:]
 
     version = linux_path.split(os.sep)[-1]
 

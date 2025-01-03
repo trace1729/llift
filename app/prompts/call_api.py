@@ -13,7 +13,8 @@ import os
 
 # api_key = "../openai.key"
 # openai.api_key_path = api_key
-openai.api_key = os.environ.get("OPENAI_API_KEY")
+openai.api_key = "sk-33a0307b2a4e4f03b23313bb8db532e3"
+openai.api_base = "https://api.deepseek.com"
 trivial_funcs = json.load(open("prompts/trivial_funcs.json", "r"))
 exclusive_funcs = json.load(open("prompts/exclusive_funcs.json", "r"))
 

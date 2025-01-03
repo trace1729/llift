@@ -16,7 +16,7 @@ services:
     build: .
     container_name: llift_ae_container
     environment:
-      - OPENAI_API_KEY=sk-xxxxx
+      - OPENAI_API_KEY=""
     depends_on:
       - db
     command: tail -f /dev/null
